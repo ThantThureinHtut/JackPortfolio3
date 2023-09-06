@@ -32,6 +32,32 @@
     font-weight: 400;
 }
 
+@media (min-width: 275px) {
+    .project__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .project {
+        border: 1.5px var(--clr-sky500) solid;
+        border-radius: 10px;
+        padding: 2em 4em;
+        align-items: center;
+        text-align: center;
+        color: var(--clr-slate2);
+        opacity: 0.4;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .project__img{
+        width: 3em;
+    }
+    .project__per {
+        font-weight: 400;
+    }
+}
 @media (min-width: 375px) {
     .project__container {
         display: flex;

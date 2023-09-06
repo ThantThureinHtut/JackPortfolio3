@@ -35,6 +35,29 @@
 
 
 /* xs */
+
+@media (min-width: 275px) {
+    .hero {
+        gap: 1.5rem;
+    }
+    .hero__img{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .hero__subtitle {
+
+    }
+
+    .hero__title {
+        
+    }
+    
+    .hero__btn{
+        font-size: var(--size-base);
+        color: var(--clr-slate5) !important;
+    }
+}
+
 @media (min-width: 475px) {
     .hero {
         gap: 1.5rem;
