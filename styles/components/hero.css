@@ -46,7 +46,7 @@
     }
  
     .hero__title {
-        font-size: var(--size-4xl);
+        font-size: 2rem;
     }
     
     .hero__btn{
