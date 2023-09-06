@@ -43,10 +43,32 @@
 .colorSky500 {
     color: var(--clr-sky500) !important;
 }
-#mobile-nav__btn{
+.mobile-nav__btn{
     font-size: var(--size-sm);
-    color: var(--clr-slate5) !important;
+    color: var( --clr-slate5) !important;
 }
 .moblie__display-flex {
 display: flex;
 }
+
+
+/* xs */
+
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
