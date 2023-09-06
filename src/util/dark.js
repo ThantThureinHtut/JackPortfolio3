@@ -28,21 +28,12 @@ themeToggleBtns.forEach(btn =>{
             suns.forEach(sun => {
                 sun.classList.remove('colorSky500');
             })
+            // querySelectorAll သုံးထားရင် forEach သုံးပြီးdataတွေပြန်ထုတ်ရတယ်
+            // querySelectorAll သုံးရတာက .sun class က element ၂ခုထဲမှာရှိနေတာကို ၂ခုလုံးထဲကကို add လုပ်ခြင်လို့
+            //   querySelectorAll နဲ့ forEach မသုံးဘူးဆို add လုပ်ရင် element တစ်ခုစီပဲဝင်သွားမယ် ၂ခုလုံးထဲမဝင်ဘူး
         }
     })
 })
-
-
-// suns.forEach(sun => {
-//     sun.addEventListener('click' , () => {
-//         sun.classList.toggle('colorSky500');
-//         if(sun.classList.contains('colorSky500')) {
-//             localStorage.setItem('clr' , 'colorSky500');
-//         }else {
-//             localStorage.removeItem('clr');
-//         }
-//     })
-// })
 };
 
 
