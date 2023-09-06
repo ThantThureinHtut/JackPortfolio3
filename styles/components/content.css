@@ -1,0 +1,117 @@
+.content {
+    background-color: var(--clr-sky500);
+    text-align: center;
+}
+.content__line {
+    border: 0.5px var(--clr-slate5) solid;
+    padding-left: 80%;
+}
+.content__btn {
+    font-size: var(--size-sm);
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: -0.03em;
+    background-color: var(--clr-slate5);
+    color: var(--clr-sky500);
+    padding : 0.5em 1em;
+    border-radius: 8px;
+    box-shadow:  0 10px 20px rgba(248, 250, 252 , 0.5), 
+                 0 6px 6px rgba(248, 250, 252 , 0.5),
+                 0 0 100px -10px var(--clr-slate5);
+   transition: transform 0.3s , box-shadow 0.3s;
+}
+
+.content__btn:hover{
+   transform: translateY(-3px);
+   box-shadow:  0 14px 28px rgba(248, 250, 252 , 0.25), 
+                 0 10px 10px rgba(248, 250, 252 , 0.22),
+}
+.contentList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.content__title {
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--clr-slate5);
+}
+.content__subtitle {
+    color: var(--clr-slate5);
+    font-size: var(--size-lg);
+    font-weight: 600;
+}
+.content__p{
+    color: var(--clr-slate5);
+    font-size: var(--size-sm);
+    margin-bottom: 1em;
+}
+.content__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .content__btn {
+        font-size: var(--size-base);
+    }
+       
+    .content__title {
+        font-size: var(--size-3xl);
+    }
+    .content__subtitle {
+        font-size: var(--size-xl);
+
+    }
+    .content__p{
+        font-size: var(--size-base);
+    }
+}
+
+
+
+/* md */
+@media (min-width: 768px) {
+    .content__btn {
+        font-size: var(--size-base);
+    }
+       
+    .content__title {
+        font-size: var(--size-4xl);
+    }
+    .content__subtitle {
+        font-size: var(--size-xl);
+
+    }
+    .content__p{
+        font-size: var(--size-base);
+    }
+
+    .contentList {
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+        margin-top: 2em;
+        margin-left: 5em;
+    }
+    
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+

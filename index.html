@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="">
+
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+
+        <li>
+          <a class="header__link" href="#skill">Skill</a>
+        </li>
+        
+           <li class="header__line"></li>
+
+        <li>
+          <button id="theme-toggle" class="header__sun sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>            
+          </button>
+        </li>
+        <li>
+          <a  class="header__content header__link btn" href="#content">Content</a>
+        </li>
+      </ul>
+
+      <button class="menu__bar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>            
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobilenav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#skill">Content</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>            
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn mobile-nav__link" href="#content">Content</a>
+          </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile  Navigation-->
+
+   <main>
+    <section class="hero container">
+        <img   class="hero__img"  src="/public/IMG_1619.JPG" alt="Profile picture">
+        <h2 class="hero__subtitle">Hi , I'm Jack</h2>
+        <h1 class="hero__title">FULL STACK <br/> WEB DEVELOPER</h1>
+        <a href="#about" class="hero__btn btn">Scorll Down</a>
+    </section>
+
+      <!-- About -->
+      <section id="about" class="about container section">
+
+          <h1 class="about__title">ABOUT MYSELF</h1>
+          <p class="about__description">My name is Thant Thurein Htut  and 16 years. I have been learning web developing for 1 year and i have created 5 projects. <br>Now , I am learning at the YIU(YOUTH UNIVERSITY INTERNATIONAL) <br> I am good at <strong>HTML </strong>-- <strong>CSS</strong> -- <strong>JS </strong></p>
+          <p class="about__line"></p>
+          <div class="about__conatiner">
+        
+            <img class="about__img" src="/public/IMG_1618.JPG" alt="">
+            <div class="about__project">
+              <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam minus libero, ipsa, vitae corrupti iure soluta reiciendis maiores ipsam laborum eveniet molestias veritatis obcaecati explicabo culpa impedit ipsum voluptatibus magni.</p>
+              <a class="btn about__btn" href="#">Read More</a>
+            </div>
+          </div>
+        </section>
+
+          <!-- Skill -->
+        <section id="skill" class="skill container section">
+              <h1 class="skill__title">SKILL</h1>
+              <p class="skill__line"></p>
+            <div class="project__container">
+              
+                <div class="project hidden">
+                  <h1 class="project__title">HTML</h1>
+                  <h3 class="project__per">80%</h3>
+                  <p class="project__p">Can use all the element skillfully</p>
+                </div>
+              
+
+              <div class="project hidden">
+                <h1 class="project__title">CSS</h1>
+                <h3 class="project__per">60%</h3>
+                <p class="project__p">Can use all the element skillfully</p>
+              </div>
+
+              <div class="project hidden">
+                <h1 class="project__title">JAVA SCRIPT</h1>
+                <h3 class="project__per">40%</h3>
+                <p class="project__p">Can use all the element skillfully</p>
+               </div>
+               
+            </div>
+        </section>
+
+        <section  id="content" class="content  section">
+          <h1 class="content__title">Content</h1>
+          <p class="content__line"></p>
+            <div class="contentList">
+              <div>
+                <h2 class="content__subtitle">Email</h2>
+                <p class="content__p">codermyanmarjack@gmail.com</p>
+               
+              </div>
+             
+
+              <!-- phone -->
+              <div>
+                <h2 class="content__subtitle">Phone Number</h2>
+              <p class="content__p"> 95+97739039</p>
+              </div>
+
+              <div class="content__btn-container">
+                <a  class="content__btn" href="" >Mail</a>
+                <a class="content__btn" href="">Call</a>
+              </div>
+              
+            </div>
+        </section>
+
+   </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

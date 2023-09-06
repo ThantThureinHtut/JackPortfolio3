@@ -1,0 +1,129 @@
+
+.skill{
+    text-align: center;
+    color: var(--clr-sky500);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+}
+.project {
+    border: 1.5px var(--clr-sky500) solid;
+    border-radius: 10px;
+    padding: 2em 4em;
+    align-items: center;
+    text-align: center;
+    color: var(--clr-slate50);
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+.skill__line {
+    border: 0.5px var(--clr-sky500) solid;
+    padding-left: 100%;
+}
+
+.project:hover {
+    opacity: 1;
+
+}
+
+.project__per {
+    font-weight: 400;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .project__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .project {
+        border: 1.5px var(--clr-sky500) solid;
+        border-radius: 10px;
+        padding: 2em 4em;
+        align-items: center;
+        text-align: center;
+        color: var(--clr-slate2);
+        opacity: 0.4;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .project__img{
+        width: 3em;
+    }
+    .project__per {
+        font-weight: 400;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .skill__title {
+        font-size: var(--size-3xl);
+    }
+
+    .project {
+        border-radius: 10px;
+        padding: 4em 8em;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .project__container {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .project {
+        border-radius: 10px;
+        padding: 2em 4em;
+    }
+    
+    
+    .project__img{
+        width: 3em;
+    }
+    .project__per {
+        font-weight: 400;
+    }
+    .skill__title {
+        font-size: var(--size-4xl);
+    }
+
+}
+
+
+/* lg */
+@media (min-width: 1024px) {
+    .project {
+        border-radius: 10px;
+        padding:3em 6em;
+    }
+    .project__per {
+        font-weight: 400;
+        font-size: var(--size-2xl);
+    }
+
+    .project__title {
+        font-size: var(--size-4xl);
+    }
+    .project__p {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .project {
+        border-radius: 10px;
+        padding:6em 8em;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

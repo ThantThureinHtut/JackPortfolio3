@@ -1,0 +1,126 @@
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+}
+/* xs */
+@media (min-width: 475px) {
+    .about__img{
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .about__title {
+        color: var(--clr-sky500);
+    }
+    
+    .about__description {
+        color: var(--clr-zinc700);
+        margin-top: 1em;
+        font-size:var(--size-sm);
+    
+    }
+    .about__line {
+        border: 0.5px var(--clr-sky500) solid;
+        padding-left: 1.5em;
+    }
+    .about__btn {
+        width: 9em;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: var(--size-base);
+        color: var(--clr-slate5) !important;
+    }  
+}
+
+
+/* sm */
+@media (min-width: 640px) {
+    .about__conatiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__title {
+        color: var(--clr-sky500);
+        font-size: var(--size-3xl);
+    }
+    
+    .about__description {
+        color: var(--clr-zinc700);
+        margin-top: 1em;
+        font-size: var(--size-base);
+    
+    }
+    .about__line {
+        border: 0.5px var(--clr-sky500) solid;
+        padding-left: 1.5em;
+    }
+    .about__btn {
+        width: 9em;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: var(--size-base);
+    }  
+    .about__img{
+        width: 25rem;
+    }
+}
+
+
+/* md */
+@media (min-width: 768px) {
+    .about__img{
+        width: 28rem;
+
+    }
+    .about__title {
+        color: var(--clr-sky500);
+    }
+    
+    .about__description {
+        color: var(--clr-zinc700);
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: var(--size-lg);
+    
+    }
+    .about__line {
+        border: 0.5px var(--clr-sky500) solid;
+        padding-left: 1,5em;
+    }
+    .about__btn {
+        width: 9em;
+        margin: 0 auto;
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .about__img {
+        width: 30em;
+        height: 30em;
+    }
+    .about__description {
+        color: var(--clr-zinc700);
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: var(--size-xl);
+    
+    }
+    .about__btn {
+        width: 9em;
+        margin: 0 auto;
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
