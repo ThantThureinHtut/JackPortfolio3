@@ -49,6 +49,12 @@
                   0 10px 10px rgba(59, 130, 246, 0.22),
  }
 /* xs */
+@media (min-width: 375px) {
+    .container{
+        max-width: 375px;
+    }
+}
+
 @media (min-width: 475px) {
     .container{
         max-width: 475px;

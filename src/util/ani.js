@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(entries => {
 },
 {
     threshold: 0,
-    rootMargin: '-20px',
+    rootMargin: '-10px',
 }
 )
 const hiddenElements = document.querySelectorAll('.hidden');
