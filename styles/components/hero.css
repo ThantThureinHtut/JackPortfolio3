@@ -44,12 +44,9 @@
         width: 6.5rem;
         height: 6.5rem;
     }
-    .hero__subtitle {
-
-    }
-
+ 
     .hero__title {
-        font-size: var(--size-3xl);
+        font-size: 1.8rem;
     }
     
     .hero__btn{
